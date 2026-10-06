@@ -11,7 +11,7 @@ Creá un agente que **resuelva un problema real de tu día a día**.
 Requisitos:
 
 1. Hacé un **fork** de este repo y trabajá en tu fork.
-2. Tu agente tiene que usar **Strands Agents**.
+2. Tu agente tiene que estar hecho **sí o sí con Strands Agents**. No vale otro framework (LangChain, CrewAI, etc.).
 3. Tiene que tener **al menos una tool custom** definida por vos con `@tool`.
 4. Entregalo abriendo un **Pull Request** a este repo (ver [Cómo entregar](#cómo-entregar)).
 
@@ -32,7 +32,7 @@ python agent.py
 
 Por defecto Strands usa **Claude en Amazon Bedrock** (región `us-west-2`), así que necesitás credenciales de AWS configuradas (`aws configure` o variables de entorno) y acceso al modelo habilitado en Bedrock.
 
-Si querés usar otro proveedor, mirá la sección *Model Providers* en la [doc de Strands](https://strandsagents.com).
+Si querés usar otro modelo (sigue siendo Strands, solo cambia el proveedor del LLM), mirá la sección *Model Providers* en la [doc de Strands](https://strandsagents.com).
 
 ## Recordatorio rápido
 
@@ -63,7 +63,7 @@ agent("Pedile algo")
    └── tu-usuario/
        ├── agent.py
        ├── README.md
-       └── requirements.txt   # solo si usás algo además de strands-agents
+       └── requirements.txt   # strands-agents + cualquier librería extra que uses
    ```
    No toques archivos fuera de tu carpeta, así no hay conflictos con los demás.
 2. En tu `README.md` contá:
