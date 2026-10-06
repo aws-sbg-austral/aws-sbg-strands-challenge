@@ -57,7 +57,7 @@ agent("Pedile algo")
 
 ## Cómo entregar
 
-1. En tu fork, creá la carpeta `agentes/<tu-usuario-de-github>/` y poné ahí todo lo tuyo:
+1. En tu fork, copiá la carpeta [`agentes/tu_nombre/`](agentes/tu_nombre/), renombrala con tu usuario de GitHub y poné ahí todo lo tuyo:
    ```
    agentes/
    └── tu-usuario/
@@ -66,7 +66,7 @@ agent("Pedile algo")
        └── requirements.txt   # strands-agents + cualquier librería extra que uses
    ```
    No toques archivos fuera de tu carpeta, así no hay conflictos con los demás.
-2. En tu `README.md` contá:
+2. Completá el `README.md` de tu carpeta (tenés uno de ejemplo en [`agentes/Masega360/`](agentes/Masega360/)):
    - **Nombre** del agente
    - **Problema** que resuelve
    - **Tools custom** que definiste y qué hace cada una
