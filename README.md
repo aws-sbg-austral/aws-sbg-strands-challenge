@@ -26,7 +26,9 @@ pip install -r agentes/Masega360/requirements.txt
 python agentes/Masega360/agent.py
 ```
 
-[`agentes/Masega360/`](agentes/Masega360/) es un ejemplo mínimo con una tool (`contar_palabras`) y el formato de entrega. Copiá esa carpeta con tu usuario y cambiale todo.
+[`agentes/Masega360/`](agentes/Masega360/) es un ejemplo mínimo con una tool (`contar_palabras`) y el formato de entrega.
+
+> 💡 Es un ejemplo bobo a propósito, solo para que veas la estructura. **Esperamos cosas mucho más copadas**: algo que de verdad uses, con tools que hagan algo interesante.
 
 ### Modelo
 
