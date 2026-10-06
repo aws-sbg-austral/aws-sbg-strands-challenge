@@ -13,7 +13,7 @@ Requisitos:
 1. Hacé un **fork** de este repo y trabajá en tu fork.
 2. Tu agente tiene que usar **Strands Agents**.
 3. Tiene que tener **al menos una tool custom** definida por vos con `@tool`.
-4. Reemplazá la sección [Mi agente](#mi-agente) de este README contando qué problema resuelve y cómo correrlo.
+4. Entregalo abriendo un **Pull Request** a este repo (ver [Cómo entregar](#cómo-entregar)).
 
 Ideas para arrancar: dividir gastos con amigos, armar la lista del súper, organizar tu semana de parciales, recomendarte qué cocinar con lo que tenés en la heladera, avisarte qué bondi te conviene... lo que te sirva a vos.
 
@@ -57,18 +57,20 @@ agent("Pedile algo")
 
 ## Cómo entregar
 
-Compartí el link a tu fork con el README completo.
+1. En tu fork, creá la carpeta `agentes/<tu-usuario-de-github>/` y poné ahí todo lo tuyo:
+   ```
+   agentes/
+   └── tu-usuario/
+       ├── agent.py
+       ├── README.md
+       └── requirements.txt   # solo si usás algo además de strands-agents
+   ```
+   No toques archivos fuera de tu carpeta, así no hay conflictos con los demás.
+2. En tu `README.md` contá:
+   - **Nombre** del agente
+   - **Problema** que resuelve
+   - **Tools custom** que definiste y qué hace cada una
+   - **Cómo correrlo**
+3. Abrí un **Pull Request** desde tu fork a `main` de este repo, con el título `[Challenge] <nombre de tu agente>`.
 
----
-
-## Mi agente
-
-> Completá esta sección en tu fork.
-
-**Nombre:**
-
-**Problema que resuelve:**
-
-**Tools custom:**
-
-**Cómo correrlo:**
+> ⚠️ Nunca subas credenciales (keys de AWS, tokens, `.env`). Usá variables de entorno.
