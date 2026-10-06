@@ -22,11 +22,11 @@ Ideas para arrancar: dividir gastos con amigos, armar la lista del súper, organ
 ```bash
 python -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-python agent.py
+pip install -r agentes/Masega360/requirements.txt
+python agentes/Masega360/agent.py
 ```
 
-`agent.py` tiene un ejemplo mínimo con una tool (`contar_palabras`). Usalo de base y cambiale todo.
+[`agentes/Masega360/`](agentes/Masega360/) es un ejemplo mínimo con una tool (`contar_palabras`) y el formato de entrega. Copiá esa carpeta con tu usuario y cambiale todo.
 
 ### Modelo
 
