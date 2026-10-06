@@ -1,6 +1,6 @@
 # Mi agente
 
-> Renombrá esta carpeta con tu usuario de GitHub y completá este README.
+> Plantilla: duplicá esta carpeta como `agentes/<tu_usuario>/` y completá este README.
 
 **Nombre:**
 

@@ -57,7 +57,7 @@ agent("Pedile algo")
 
 ## Cómo entregar
 
-1. En tu fork, copiá la carpeta [`agentes/tu_nombre/`](agentes/tu_nombre/), renombrala con tu usuario de GitHub y poné ahí todo lo tuyo:
+1. En tu fork, duplicá la carpeta [`agentes/tu_nombre/`](agentes/tu_nombre/) con el nombre de tu usuario de GitHub (no la renombres: la plantilla tiene que quedar) y poné ahí todo lo tuyo:
    ```
    agentes/
    └── tu-usuario/
