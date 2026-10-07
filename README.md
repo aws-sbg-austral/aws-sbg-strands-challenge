@@ -32,9 +32,21 @@ python agentes/Masega360/agent.py
 
 ### Modelo
 
-Por defecto Strands usa **Claude en Amazon Bedrock** (región `us-west-2`), así que necesitás credenciales de AWS configuradas (`aws configure` o variables de entorno) y acceso al modelo habilitado en Bedrock.
+El ejemplo corre **local con [Ollama](https://ollama.com)**, gratis y sin cuenta de nada. Antes de correrlo:
 
-Si querés usar otro modelo (sigue siendo Strands, solo cambia el proveedor del LLM), mirá la sección *Model Providers* en la [doc de Strands](https://strandsagents.com).
+```bash
+ollama pull llama3.2
+```
+
+Podés usar cualquier modelo de Ollama que soporte tools (por ejemplo `qwen3` o `llama3.1`): cambiá el `model_id` en `agent.py`.
+
+**¿Preferís Claude en Amazon Bedrock?** Sacá el `model=...` del `Agent` y Strands usa Bedrock por defecto. Necesitás:
+
+- Credenciales de AWS (`aws login` o `aws configure`).
+- `botocore[crt]` instalado si te logueaste con `aws login`.
+- Si tu cuenta es nueva, completar el formulario de uso de modelos de Anthropic en la consola de Bedrock (se hace una sola vez).
+
+Para otros proveedores, mirá *Model Providers* en la [doc de Strands](https://strandsagents.com). Sea cual sea el modelo, el agente tiene que ser de Strands.
 
 ## Recordatorio rápido
 
@@ -65,7 +77,7 @@ agent("Pedile algo")
    └── tu-usuario/
        ├── agent.py
        ├── README.md
-       └── requirements.txt   # strands-agents + cualquier librería extra que uses
+       └── requirements.txt   # strands-agents[ollama] + cualquier librería extra que uses
    ```
    No toques archivos fuera de tu carpeta, así no hay conflictos con los demás.
 2. Completá el `README.md` de tu carpeta (tenés uno de ejemplo en [`agentes/Masega360/`](agentes/Masega360/)):

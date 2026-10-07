@@ -1,4 +1,5 @@
 from strands import Agent, tool
+from strands.models.ollama import OllamaModel
 
 
 @tool
@@ -12,6 +13,7 @@ def contar_palabras(texto: str) -> int:
 
 
 agent = Agent(
+    model=OllamaModel(host="http://localhost:11434", model_id="llama3.2"),
     system_prompt="Sos un asistente que responde en español rioplatense.",
     tools=[contar_palabras],
 )
