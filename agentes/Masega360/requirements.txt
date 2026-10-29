@@ -1,1 +1,2 @@
 strands-agents[ollama]
+mcp-server-fetch
