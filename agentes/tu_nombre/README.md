@@ -12,6 +12,13 @@
 
 - `nombre_de_la_tool(parametros)`: qué hace.
 
+**Guardrail (hook):** qué frena y por qué.
+
+**MCP y skills (suman puntos):**
+
+- MCP: qué server conectaste y para qué. Borrá esta línea si no usaste.
+- Skill: `nombre-de-la-skill`, qué le enseña al agente. Borrá esta línea si no usaste.
+
 **Cómo correrlo:**
 
 ```bash
